@@ -24,26 +24,28 @@
                     <arguments>
                         <argument name="css_class" xsi:type="string">header link custom</argument>
                         <argument name="label" xsi:type="string" translate="true">Payment and delivery</argument>
-                        <argument name="path" xsi:type="string" translate="true">payment</argument>
+                        <argument name="path" xsi:type="string" translate="true">payment</argument> <!--TODO set valid path-->
                     </arguments>
                 </block>
                 <block class="\Magento\Framework\View\Element\Html\Link" name="ves-top-link3">
                     <arguments>
                         <argument name="css_class" xsi:type="string">header link custom</argument>
                         <argument name="label" xsi:type="string" translate="true">About us</argument>
-                        <argument name="path" xsi:type="string" translate="true">about</argument>
+                        <argument name="path" xsi:type="string" translate="true">about</argument> <!--TODO set valid path-->
                     </arguments>
                 </block>
                 <block class="\Magento\Framework\View\Element\Html\Link" name="ves-top-link4">
                     <arguments>
                         <argument name="css_class" xsi:type="string">header link custom</argument>
                         <argument name="label" xsi:type="string" translate="true">Contact us</argument>
-                        <argument name="path" xsi:type="string" translate="true">contacts</argument>
+                        <argument name="path" xsi:type="string" translate="true">contact</argument>
                     </arguments>
                 </block>
             </block>
 
             <block class="Magento\Framework\View\Element\Html\Links" name="header.links">
+                    <!-- <block class="Magento\Customer\Block\Account\Customer" name="customer" template="account/customer.phtml" before="-"/> -->
+                    <!-- <block class="Magento\Customer\Block\Account\AuthorizationLink" name="authorization-link-login" template="account/link/authorization.phtml"/> -->
                 <arguments>
                     <argument name="css_class" xsi:type="string">header links</argument>
                 </arguments>
