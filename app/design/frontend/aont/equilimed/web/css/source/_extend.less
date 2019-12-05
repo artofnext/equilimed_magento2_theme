@@ -3,10 +3,12 @@
 // @navigation__background: @secondary__color__light;
 // @navigation__background: green;
 
+.copyright {
+    background-color: @color__button-green-normal;
+}
 
-
-@button__border-radius: 20px;
-@button-primary__border-radius: 20px;
+@button__border-radius: 40px;
+@button-primary__border-radius: 40px;
 
 
 //
@@ -16,10 +18,11 @@
 @button__font-weight: @font-weight__semibold;
 
 //  Default = secondary button
+@button__color: @color-white;
 @button__background:  @color__button-green-normal;
 @button__border: 1px solid @button__background;
 @button__hover__color: @button__color;
-@button__hover__background: darken(@button__background, 5%);
+@button__hover__background: darken(@button__background, 10%);
 @button__active__background: @color-gray-darken1;
 
 //  Primary button
@@ -27,7 +30,7 @@
 @button-primary__background: @color__button-pink-normal;
 @button-primary__border: 1px solid @button-primary__background;
 @button-primary__active__background: @link__hover__color;
-@button-primary__hover__background: darken(@button-primary__background, 5%);
+@button-primary__hover__background: darken(@button-primary__background, 10%);
 @button-primary__active__border: 1px solid @button-primary__background;
 @button-primary__hover__border: 1px solid @button-primary__background;
 @button-primary__active__color: @color-white;
