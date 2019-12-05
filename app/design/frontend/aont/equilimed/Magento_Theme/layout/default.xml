@@ -8,6 +8,41 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceContainer name="header.panel">
+
+            <block class="Magento\Framework\View\Element\Html\Links" name="header.links.custom">
+                <arguments>
+                    <argument name="css_class" xsi:type="string">header links custom</argument>
+                </arguments>
+                <block class="\Magento\Framework\View\Element\Html\Link" name="ves-top-link1">
+                    <arguments>
+                        <argument name="css_class" xsi:type="string">header link custom</argument>
+                        <argument name="label" xsi:type="string" translate="true">Home</argument>
+                        <argument name="path" xsi:type="string" translate="true">home</argument>
+                    </arguments>
+                </block>
+                <block class="\Magento\Framework\View\Element\Html\Link" name="ves-top-link2">
+                    <arguments>
+                        <argument name="css_class" xsi:type="string">header link custom</argument>
+                        <argument name="label" xsi:type="string" translate="true">Payment and delivery</argument>
+                        <argument name="path" xsi:type="string" translate="true">payment</argument>
+                    </arguments>
+                </block>
+                <block class="\Magento\Framework\View\Element\Html\Link" name="ves-top-link3">
+                    <arguments>
+                        <argument name="css_class" xsi:type="string">header link custom</argument>
+                        <argument name="label" xsi:type="string" translate="true">About us</argument>
+                        <argument name="path" xsi:type="string" translate="true">about</argument>
+                    </arguments>
+                </block>
+                <block class="\Magento\Framework\View\Element\Html\Link" name="ves-top-link4">
+                    <arguments>
+                        <argument name="css_class" xsi:type="string">header link custom</argument>
+                        <argument name="label" xsi:type="string" translate="true">Contact us</argument>
+                        <argument name="path" xsi:type="string" translate="true">contacts</argument>
+                    </arguments>
+                </block>
+            </block>
+
             <block class="Magento\Framework\View\Element\Html\Links" name="header.links">
                 <arguments>
                     <argument name="css_class" xsi:type="string">header links</argument>

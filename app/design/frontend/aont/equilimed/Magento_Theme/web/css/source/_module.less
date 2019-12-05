@@ -122,13 +122,19 @@
                     @_link-text-decoration: none,
                     @_link-color-visited: @header-panel__text-color,
                     @_link-text-decoration-visited: none,
-                    @_link-color-hover: @header-panel__text-color,
+                    @_link-color-hover: @header-panel__text-color-active,
                     @_link-text-decoration-hover: underline,
-                    @_link-color-active: @header-panel__text-color,
+                    @_link-color-active: @header-panel__text-color-active,
                     @_link-text-decoration-active: underline
                     );
                 }
             }
+        }
+    }
+
+    .header.panel {
+        > .header.links.custom {
+            float: left;
         }
     }
 
