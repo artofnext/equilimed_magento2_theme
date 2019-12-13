@@ -19,8 +19,7 @@ button {
     display: none;
 }
 
-@button__border-radius: 40px;
-@button-primary__border-radius: 40px;
+
 
 
 //
@@ -51,22 +50,47 @@ button {
 @button-icon__line-height: @icon-font__line-height;
 
 
+@_icon-font-color: #fff;
+// @color-gray46:
+
+#button-disabled {
+    border: 1px solid @button-disabled-color;
+    background-color: @button-disabled-color;
+    opacity: 1;
+}
+
 // Wrap for desctop screens
 .logo {
     width: 300px;
 }
 
+#input-text (@width) {
+    height: 60px;
+    width: @width;
+    border-radius: @button__border-radius;
+    padding: 0 120px 0 20px;
+}
+
 .block-search {
     float: left;
+    width: unset;
 
     .input-text {
-        height: 60px;
-        width: 522px;
-        border-radius: 30px;
+        #input-text(552px);
     }
 
     .action.search {
-        right: -271px;
+        right: 0;
+        width: 119px;
+        color: #fff;
+        box-shadow: none;
+
+        strong {
+            line-height: 32px;
+        }
+        &[disabled] {
+            #button-disabled;
+        }
     }
 }
 
@@ -78,6 +102,10 @@ button {
     .minicart-wrapper {
         // align-self: end;
     }
+}
+
+.newsletter input[type="email"] {
+    #input-text(575px);
 }
 
 // END Wrap for desctop screens
