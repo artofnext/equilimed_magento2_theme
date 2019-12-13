@@ -61,6 +61,7 @@ button {
 }
 
 // Wrap for desctop screens
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
 .logo {
     width: 300px;
 }
@@ -108,7 +109,7 @@ button {
 .newsletter input[type="email"] {
     #input-text(575px);
 }
+}
+
 
 // END Wrap for desctop screens
-
-.gallery-placeholder{ width: 100%; }
