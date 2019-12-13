@@ -51,6 +51,13 @@
                 </arguments>
             </block>
         </referenceContainer>
+
+        <move element="minicart" destination="header-wrapper" after="-" />
+
+        <!-- <referenceContainer name="header-wrapper">
+
+        </referenceContainer> -->
+
         <referenceBlock name="logo">
             <arguments>
                 <argument name="logo_file" xsi:type="string">images/logo.svg</argument>
