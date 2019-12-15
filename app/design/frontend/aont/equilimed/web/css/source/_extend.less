@@ -5,7 +5,7 @@
 // @navigation__background: green;
 
 button {
-    height: 60px;
+    height: @element-height;
 }
 
 .copyright {
@@ -87,7 +87,9 @@ button {
 
 #input-text (@width) {
     height: 60px;
+    // max-width: @width;
     width: @width;
+    // width: 200%;
     border-radius: @button__border-radius;
     padding: 0 120px 0 20px;
 }
@@ -152,6 +154,44 @@ button {
 
 .block-search .action.search:before {
     color: #fff;
+}
+
+.navigation a {
+    line-height: @element-height !important;
+}
+
+.navigation {
+
+    height: @element-height;
+
+    .level0 {
+
+        width: 377px;
+        // background-color: @color__button-green-normal;
+        background-image: url('@{baseDir}images/button_outline.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        // border-radius: 30px;
+        & a {
+
+            text-align: center !important;
+            /* margin: 0 auto; */
+            display: block !important;
+            color: @color__button-green-normal !important;
+        }
+
+        &:hover {
+            background-image: url('@{baseDir}images/button.svg');
+            & a {
+                color: white !important;
+            }
+        }
+    }
+}
+
+.navigation .level0.parent > .level-top > .ui-menu-icon {
+    right: 25px;
 }
 
 .newsletter input[type="email"] {
