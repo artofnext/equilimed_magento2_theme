@@ -83,6 +83,7 @@ button {
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
 .logo {
     width: 300px;
+    margin: 0 auto;
 }
 
 #input-text (@width) {
@@ -122,12 +123,35 @@ button {
 .counter.qty {
 }
 
-.header.content {
-    // display: flex;
-    // justify-content: space-between;
-    // background-color: green;
+
     
-    .minicart-wrapper a {
+.header.content {
+    padding: 50px 20px;
+    .block-static-block {
+        float: left;
+        // width: 150px;
+        clear: none;
+        text-align: center;
+        margin: -15px auto;
+        padding: 0 20px;
+
+        .header-phone__icon {
+            margin: 0;
+        } 
+
+        .header-phone__number {
+            // font-family: Source Sans Pro;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 21px;
+        }
+
+        .header-phone__icon::before {
+            content: '\0045';
+            font-family: 'equilimed';
+            font-size: 40px;
+            color: @color__button-green-normal;
+        }
     }
 }
 
@@ -218,5 +242,19 @@ button {
 }
 }
 
+// Product item
+.product-item {
+    border: 1px solid #EEEEEE;
+    // box-sizing: border-box;
+    border-radius: 30px;
+}
 
+.product-item-info:hover {
+    border-radius: 30px 30px 0 0;
+    
+    .product-item-inner {
+        border-radius: 0 0 30px 30px;
+
+    }
+}
 // END Wrap for desctop screens
