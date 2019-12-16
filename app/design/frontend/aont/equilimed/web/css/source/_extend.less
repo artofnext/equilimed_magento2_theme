@@ -156,15 +156,24 @@ button {
     color: #fff;
 }
 
+.section-item-content {
+    background-color: white;
+}
+
 .navigation a {
     line-height: @element-height !important;
 }
 
 .navigation {
-
+    
     height: @element-height;
+    
+    .ui-menu {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
 
-    .level0 {
+    > .level0 {
 
         width: 377px;
         // background-color: @color__button-green-normal;
@@ -187,7 +196,17 @@ button {
                 color: white !important;
             }
         }
+        
+        &.active {
+            background-image: url('@{baseDir}images/button.svg');
+            & a {
+                border: none;
+                color: white !important;
+            }
+
+        }
     }
+}
 }
 
 .navigation .level0.parent > .level-top > .ui-menu-icon {
